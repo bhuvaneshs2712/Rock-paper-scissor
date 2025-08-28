@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="header">
+      <h1 class="title" style="font-family: ;">Rock Paper Scissors</h1>
+      <div class="scoreboard">
+        <div class="score user" aria-label="Player"><span class="badge">🙂</span> <span id="userScore">0</span></div>
+        <div class="score ai" aria-label="Computer"><span class="badge">🤖</span> <span id="aiScore">0</span></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="decor" aria-hidden="true">
+        <span class="orb"></span>
+        <span class="orb"></span>
+        <span class="orb"></span>
+        <span class="orb"></span>
+      </div>
+      <div class="arena">
+        <div class="hand user-hand" id="userHand" aria-live="polite">
+          <span class="placeholder"></span>
+        </div>
+        <div class="vs">VS</div>
+        <div class="hand ai-hand" id="aiHand" aria-live="polite">
+          <span class="placeholder"></span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="choice" data-choice="rock" aria-label="Rock">
+          <span></span>
+          <small>Rock</small>
+        </button>
+        <button class="choice" data-choice="paper" aria-label="Paper">
+          <span></span>
+          <small>Paper</small>
+        </button>
+        <button class="choice" data-choice="scissors" aria-label="Scissors">
+          <span></span>
+          <small>Scissors</small>
+        </button>
+      </div>
+
+      <p id="result" class="result" role="status" aria-live="polite">Make your move!</p>
+      <div class="actions">
+        <button id="resetBtn" class="reset">Reset</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span class="bl">Best of luck!</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
