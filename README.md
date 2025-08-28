@@ -21,12 +21,6 @@ A sleek, animated Rock–Paper–Scissors game with a beginner-friendly codebase
 - CSS for the animated, glassy UI (`style.css`)
 - JavaScript for game logic and effects (`script.js`)
 
-▶️ Run Locally
-- Just double-click `index.html`, or
-- Serve the folder with any static server (optional):
-  - VS Code Live Server, or
-  - Python: `python -m http.server` (then open `http://localhost:8000`)
-
 🧩 Customization
 - Change colors/animation speeds in `style.css`:
   - Background motion: `@keyframes bgShift`
@@ -48,5 +42,6 @@ RPS/
 
 🙌 Credits
 Designed and implemented with a focus on clarity and beginner-friendly code. Enjoy and remix!
+
 
 
